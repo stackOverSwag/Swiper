@@ -6,13 +6,14 @@ public class KeyHandler implements KeyListener {
 public boolean upPressed, downPressed, leftPressed, rightPressed;
 
     @Override
-    public void keyTyped(KeyEvent e) {} // NOT USED
+    public void keyTyped(KeyEvent e) {} // NOT USED EVER
 
     @Override
     public void keyPressed(KeyEvent e) {
         
         int code = e.getKeyCode(); // returns number of key pressed
         
+        // SETS VALUE FOR LATER
         if (code == KeyEvent.VK_W) {
             upPressed = true;
         }
@@ -31,7 +32,8 @@ public boolean upPressed, downPressed, leftPressed, rightPressed;
     public void keyReleased(KeyEvent e) {
 
         int code = e.getKeyCode();
-
+        
+        // DOESN'T WORK FOR NOW
         @Override
         if (code == KeyEvent.VK_W) {
             upPressed = false;
