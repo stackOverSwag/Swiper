@@ -13,7 +13,7 @@ public class GamePanel extends JPanel implements Runnable {
     final int screenWidth = tileSize * maxScreenCol; // 768 pixels
     final int screenHeight = tileSize * maxScreenRow; // 576 pixels
 
-    KeyHandler keyH = new KeyHandler();
+    KeyHandler keyH = new KeyHandler(); // new keyhandler, check KeyHandler class
     Thread gameThread;
     
     // Set player's default position
@@ -53,7 +53,8 @@ public class GamePanel extends JPanel implements Runnable {
     }
 
     public void update() {
-
+        
+        // changes to position from keyhandler
         if (keyH.upPressed == true) {
             playerY -= playerSpeed;
         }
