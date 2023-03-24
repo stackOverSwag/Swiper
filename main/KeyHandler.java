@@ -50,5 +50,8 @@ public boolean upPressed, downPressed, leftPressed, rightPressed;
         if (code == KeyEvent.VK_D) {
             rightPressed = false;
         }
+        
+        // TODO
+        // fix this dumb override issue!
     }
 }
