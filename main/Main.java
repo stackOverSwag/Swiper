@@ -18,6 +18,11 @@ public class Main {
         window.setVisible(true);
 
         gamePanel.startGameThread(); // starts the game!
+        
+        // TODO
+        // Enemies
+        // Prolly inventory???
+        // MAPPP
 
     }
 }
